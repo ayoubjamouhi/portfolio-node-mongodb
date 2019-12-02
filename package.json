@@ -8,6 +8,7 @@
     "sass": "sass --watch public/scss:public/css",
     "dev": "concurrently \"npm run watch\" \"npm run sass\" --names \"Node,Sss\" --prefix name",
     "start": "node start.js",
+    "build": "node start.js",
     "heroku-postbuild": "node start.js"
   },
   "author": "",
