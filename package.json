@@ -7,6 +7,7 @@
     "watch": "nodemon start.js",
     "sass": "sass --watch public/scss:public/css",
     "dev": "concurrently \"npm run watch\" \"npm run sass\" --names \"Node,Sss\" --prefix name",
+    "start": "node start.js",
     "heroku-postbuild": "node start.js"
   },
   "author": "",
