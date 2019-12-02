@@ -1,8 +1,8 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "portfolio jfnadev nodejs",
+  "main": "start.js",
   "scripts": {
     "watch": "nodemon start.js",
     "sass": "sass --watch public/scss:public/css",
@@ -26,5 +26,17 @@
   "devDependencies": {
     "concurrently": "^5.0.0",
     "node-sass": "^4.13.0"
-  }
+  }, 
+  "engines": {
+    "node": "13.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfnadev/portfolio-node-mongodb"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
 }
