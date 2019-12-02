@@ -33,10 +33,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jfnadev/portfolio-node-mongodb"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
+  }
 }
