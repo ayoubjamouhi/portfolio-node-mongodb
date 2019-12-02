@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700,800,900');
+$orange: #fc6900;
+$yellow: #ffc600;
+$gras: #454545;
+$width_container: 95%;
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  min-height: 100%;
+  font-family: 'Work Sans';
+}
+.clearfix {
+  clear: both;
+}
+.container {
+  width: $width_container;
+  margin: 0 auto;
+}
+header {
+
+  nav {
+    ul {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+        li {
+          list-style: none;
+          a.logo {
+            color: $orange;
+          }
+          button {
+            border: 2px solid $orange;
+            background: none;
+            border-radius: 1rem;
+            padding: 5px 18px;
+            color: $orange;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          button:hover {
+            color: white;
+            background: $orange;
+          }
+        }
+      }
+  }
+  div.top {
+    color: black;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 8rem;
+  }
+}
+main {
+  section.about {
+    div.wave {
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 157px;
+      -webkit-mask: url(/images/BJS/dripsmask.svg);
+      mask: url(/images/BJS/dripsmask.svg);
+      background: $yellow;
+      background-image: url(/images/bank-note-rotated.svg);
+      background-size: 10px;
+      background-position: bottom left;
+    }
+    .wave.wave--top {
+      bottom: 100%;
+      bottom: calc(100% - 1px);
+    }
+    div.aboutme {
+      background: $yellow;
+      background-image: url(/images/bank-note-rotated.svg);
+      background-size: 10px;
+      background-position: bottom left;
+      text-align: center;
+      padding: 0.2rem 8rem 2rem 8rem;
+      .container {
+        width: 70%;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $gras;
+        transform: rotate(-1.2deg);
+        background-image: linear-gradient(0deg, transparent 12px, #fff 13px, #fff 22px, transparent 23px, transparent 100%);
+      }
+      p {
+        word-break: break-all;
+      }
+    }
+    div.skills {
+      display: grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-gap: 4rem;
+      padding: 5rem;
+      justify-items: center;
+      text-align: center;
+      h3 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-bottom: 1px solid $yellow;
+      }
+      span {
+        display: block;
+      }
+      label {
+        font-weight: bold;
+      }
+
+    }
+  }
+  section.projects {
+    text-align: center;
+    padding: 5rem;
+    h3 {
+      font-size: 3rem;
+      color: $gras;
+    }
+    span {
+      color: $gras;
+      margin-bottom: 3rem;
+      display: block;
+      a {
+        color: $gras;
+        &:hover {
+          color: $gras;
+        }
+      }
+    }
+    div.projects__all {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      div {
+        img {
+          width: 300px;
+          height: 200px;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+  section.investing {
+    text-align: center;
+    padding: 5rem;
+    h3 {
+      font-size: 3rem;
+      color: $gras;
+    }
+    span {
+      display: block;
+      margin-bottom: 2rem;
+    }
+    button {
+      border: 2px solid $orange;
+      background: none;
+      border-radius: 1rem;
+      padding: 10px 28px;
+      color: $orange;
+      font-weight: bold;
+      font-size: 1.3rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $orange;
+        color: #fff;
+      }
+    }
+  }
+
+}
+div.wave {
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 157px;
+  -webkit-mask: url(/images/BJS/dripsmask.svg);
+  mask: url(/images/BJS/dripsmask.svg);
+  background: $orange;
+  //background-image: url(/images/bank-note-rotated.svg);
+  background-size: 10px;
+  background-position: bottom left;
+}
+.wave.wave--top {
+  bottom: 100%;
+  bottom: calc(100% - 1px);
+}
+footer {
+  background-color: $orange;
+  text-align: center;
+  padding: 5rem;
+  color: #fff;
+  > a {
+    font-size: 1.6rem;
+  }
+  span {
+    display: block;
+    font-size: 1.6rem;
+  }
+  div.social__media {
+    a {
+      font-weight: bold;
+      color: #fff;
+      span {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  }
+}

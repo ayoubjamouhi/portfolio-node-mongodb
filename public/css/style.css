@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700,800,900");
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  min-height: 100%;
+  font-family: "Work Sans";
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a.logo {
+  color: #fc6900;
+}
+header nav ul li button {
+  border: 2px solid #fc6900;
+  background: none;
+  border-radius: 1rem;
+  padding: 5px 18px;
+  color: #fc6900;
+  font-weight: bold;
+  cursor: pointer;
+}
+header nav ul li button:hover {
+  color: white;
+  background: #fc6900;
+}
+header div.top {
+  color: black;
+  text-align: center;
+  font-size: 3.6rem;
+  padding: 8rem;
+}
+
+main section.about div.wave {
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 157px;
+  -webkit-mask: url(/images/BJS/dripsmask.svg);
+  mask: url(/images/BJS/dripsmask.svg);
+  background: #ffc600;
+  background-image: url(/images/bank-note-rotated.svg);
+  background-size: 10px;
+  background-position: bottom left;
+}
+main section.about .wave.wave--top {
+  bottom: 100%;
+  bottom: calc(100% - 1px);
+}
+main section.about div.aboutme {
+  background: #ffc600;
+  background-image: url(/images/bank-note-rotated.svg);
+  background-size: 10px;
+  background-position: bottom left;
+  text-align: center;
+  padding: 0.2rem 8rem 2rem 8rem;
+}
+main section.about div.aboutme .container {
+  width: 70%;
+}
+main section.about div.aboutme h3 {
+  font-size: 2rem;
+  color: #454545;
+  transform: rotate(-1.2deg);
+  background-image: linear-gradient(0deg, transparent 12px, #fff 13px, #fff 22px, transparent 23px, transparent 100%);
+}
+main section.about div.aboutme p {
+  word-break: break-all;
+}
+main section.about div.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  padding: 5rem;
+  justify-items: center;
+  text-align: center;
+}
+main section.about div.skills h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 1px solid #ffc600;
+}
+main section.about div.skills span {
+  display: block;
+}
+main section.about div.skills label {
+  font-weight: bold;
+}
+main section.projects {
+  text-align: center;
+  padding: 5rem;
+}
+main section.projects h3 {
+  font-size: 3rem;
+  color: #454545;
+}
+main section.projects span {
+  color: #454545;
+  margin-bottom: 3rem;
+  display: block;
+}
+main section.projects span a {
+  color: #454545;
+}
+main section.projects span a:hover {
+  color: #454545;
+}
+main section.projects div.projects__all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main section.projects div.projects__all div img {
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+}
+main section.investing {
+  text-align: center;
+  padding: 5rem;
+}
+main section.investing h3 {
+  font-size: 3rem;
+  color: #454545;
+}
+main section.investing span {
+  display: block;
+  margin-bottom: 2rem;
+}
+main section.investing button {
+  border: 2px solid #fc6900;
+  background: none;
+  border-radius: 1rem;
+  padding: 10px 28px;
+  color: #fc6900;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+main section.investing button:hover {
+  background-color: #fc6900;
+  color: #fff;
+}
+
+div.wave {
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 157px;
+  -webkit-mask: url(/images/BJS/dripsmask.svg);
+  mask: url(/images/BJS/dripsmask.svg);
+  background: #fc6900;
+  background-size: 10px;
+  background-position: bottom left;
+}
+
+.wave.wave--top {
+  bottom: 100%;
+  bottom: calc(100% - 1px);
+}
+
+footer {
+  background-color: #fc6900;
+  text-align: center;
+  padding: 5rem;
+  color: #fff;
+}
+footer > a {
+  font-size: 1.6rem;
+}
+footer span {
+  display: block;
+  font-size: 1.6rem;
+}
+footer div.social__media a {
+  font-weight: bold;
+  color: #fff;
+}
+footer div.social__media a span {
+  display: inline-block;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

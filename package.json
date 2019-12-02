@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon start.js",
+    "sass": "sass --watch public/scss:public/css",
+    "dev": "concurrently \"npm run watch\" \"npm run sass\" --names \"Node,Sss\" --prefix name"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "flash": "^1.1.0",
+    "mongodb": "^3.3.5",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1",
+    "pug": "^2.0.4",
+    "sass": "^1.23.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "node-sass": "^4.13.0"
+  }
+}

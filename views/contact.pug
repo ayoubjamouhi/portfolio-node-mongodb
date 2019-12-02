@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(method="POST", action="/contact")
+    fieldset
+      label(for="name") Name
+        input(type="text", name="name",id="name")
+      label(for="email") Email
+          input(type="email", name="email", id="email")
+      label(for="message") Message
+        textarea(name="message",id="message")
+      button(type="submit") Send !
