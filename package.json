@@ -7,7 +7,6 @@
     "watch": "nodemon start.js",
     "sass": "sass --watch public/scss:public/css",
     "dev": "concurrently \"npm run watch\" \"npm run sass\" --names \"Node,Sss\" --prefix name",
-    "start": "node start.js",
     "build": "node start.js",
     "heroku-postbuild": "node start.js"
   },
@@ -27,7 +26,7 @@
   "devDependencies": {
     "concurrently": "^5.0.0",
     "node-sass": "^4.13.0"
-  }, 
+  },
   "engines": {
     "node": "13.1.0"
   },
